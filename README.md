@@ -33,26 +33,26 @@ A modern document summarization system that combines Retrieval-Augmented Generat
 ## Installation
 
 1. **Clone the repository**
-   \`\`\`bash
+   ```
    git clone <repository-url>
    cd rag-document-summarizer
-   \`\`\`
+   ```
 
 2. **Install dependencies**
-   \`\`\`bash
+   ```
    pip install -r requirements.txt
-   \`\`\`
+   ```
 
 3. **Optional: Set up environment variables**
-   \`\`\`bash
+   ```
    cp .env.example .env
    # Edit .env if you want to customize default models
-   \`\`\`
+   ```
 
 4. **Run the application**
-   \`\`\`bash
+   ```
    python app.py
-   \`\`\`
+   ```
 
 5. **Open your browser**
    Navigate to \`http://localhost:5000\`
@@ -77,18 +77,18 @@ A modern document summarization system that combines Retrieval-Augmented Generat
 ## API Endpoints
 
 ### Health Check
-\`\`\`
+```
 GET /health
-\`\`\`
+```
 
 ### Upload Document
-\`\`\`
+```
 POST /upload
 Content-Type: multipart/form-data
-\`\`\`
+```
 
 ### Generate Summary
-\`\`\`
+```
 POST /summarize
 Content-Type: application/json
 
@@ -100,11 +100,11 @@ Content-Type: application/json
   "embedding_model": "text-embedding-3-small",
   "summary_model": "gpt-4o-mini"
 }
-\`\`\`
+```
 
 ## Project Structure
 
-\`\`\`
+```
 rag-document-summarizer/
 ├── document_parser.py         # Document parsing and chunking
 ├── embedding_engine.py        # OpenAI embeddings + FAISS
@@ -118,7 +118,7 @@ rag-document-summarizer/
 ├── requirements.txt          # Python dependencies
 ├── .env.example             # Environment variables template
 └── README.md                # This file
-\`\`\`
+```
 
 ## Key Changes from Original
 
